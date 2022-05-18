@@ -21,9 +21,17 @@ body {
   font-family: "Inter", sans-serif;
   color: #343a40;
   line-height: 1;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .btn {
@@ -33,6 +41,10 @@ body {
   border-radius: 50%;
   background: none;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn:hover {
@@ -64,10 +76,12 @@ body {
 }
 
 .page-link:hover,
-.page-link:active {
+.page-link:active,
+.page-link.page-link--current {
   background-color: #087f5b;
   color: #fff;
 }
 
 .dots {
+  color: #868e96;
 }
